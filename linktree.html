@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayaan Mitra — Links</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#15140f;
+    --paper:#ede8dc;
+    --ash:#8b8878;
+    --gold:#c9a227;
+    --safelight:#c1401d;
+    --line:rgba(21,20,15,0.15);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    min-height:100vh;
+    background:var(--ink);
+    color:var(--paper);
+    font-family:'Inter', sans-serif;
+    display:flex; justify-content:center;
+    padding:64px 20px;
+    background-image:repeating-linear-gradient(115deg, rgba(237,232,220,0.04) 0px, rgba(237,232,220,0.04) 1px, transparent 1px, transparent 90px);
+  }
+  .card{
+    width:100%; max-width:420px;
+    text-align:center;
+  }
+  .avatar{
+    width:96px; height:96px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:linear-gradient(160deg,#3a382d,#15140f);
+    border:1px solid rgba(237,232,220,0.25);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces', serif;
+    font-size:28px;
+    font-weight:500;
+    color:var(--gold);
+  }
+  h1{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:28px;
+    margin-bottom:8px;
+  }
+  .role{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--ash);
+    margin-bottom:44px;
+  }
+  .links{display:flex; flex-direction:column; gap:14px;}
+  .link{
+    display:flex; align-items:center; gap:14px;
+    padding:16px 20px;
+    border:1px solid rgba(237,232,220,0.25);
+    border-radius:10px;
+    text-decoration:none;
+    color:var(--paper);
+    background:rgba(237,232,220,0.03);
+    transition:border-color .2s, background .2s, transform .15s;
+    text-align:left;
+  }
+  .link:hover{border-color:var(--gold); background:rgba(237,232,220,0.08); transform:translateY(-1px);}
+  .icon{
+    width:36px; height:36px; flex:0 0 36px;
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:16px;
+    background:rgba(237,232,220,0.08);
+  }
+  .link .label{font-size:15px; font-weight:500;}
+  .link .sub{font-size:12px; color:var(--ash); margin-top:2px;}
+  .link .body{flex:1;}
+  footer{
+    margin-top:56px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    color:rgba(237,232,220,0.35);
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="avatar">AM</div>
+    <h1>Ayaan Mitra</h1>
+    <div class="role">Photographer · Bengaluru</div>
+    <div class="links">
+      <a class="link" href="https://wa.me/919348592762" target="_blank" rel="noopener">
+        <div class="icon">W</div>
+        <div class="body">
+          <div class="label">WhatsApp</div>
+          <div class="sub">Message me directly</div>
+        </div>
+      </a>
+      <a class="link" href="https://www.instagram.com/mister.mitra" target="_blank" rel="noopener">
+        <div class="icon">IG</div>
+        <div class="body">
+          <div class="label">Instagram</div>
+          <div class="sub">@mister.mitra</div>
+        </div>
+      </a>
+      <a class="link" href="https://youtube.com/@thephotographerchef" target="_blank" rel="noopener">
+        <div class="icon">YT</div>
+        <div class="body">
+          <div class="label">YouTube</div>
+          <div class="sub">@thephotographerchef</div>
+        </div>
+      </a>
+      <a class="link" href="index.html">
+        <div class="icon">P</div>
+        <div class="body">
+          <div class="label">Portfolio</div>
+          <div class="sub">Full site with my work</div>
+        </div>
+      </a>
+    </div>
+    <footer>© 2026 Ayaan Mitra</footer>
+  </div>
+</body>
+</html>
